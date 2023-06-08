@@ -1,0 +1,27 @@
+{
+  "tc": {
+    "type"    : "valid",
+    "username": "standard_user",
+    "password": "secret_sauce"
+  },
+  "tc": {
+    "type"    : "Invalid",
+    "username": "locked_out_user",
+    "password": "secret_sauce"
+  },
+  "tc": {
+    "type"    : "valid",
+    "username": "problem_user",
+    "password": "secret_sauce"
+  },
+  "tc": {
+    "type"      : "valid",
+    "searchText": "performance_glitch_user",
+    "expectedMessage": "secret_sauce"
+  },
+  "tc": {
+    "type"    : "Invalid",
+    "searchText": "Problem_out_user",
+    "password": "asdgsggdja"
+  }
+}
