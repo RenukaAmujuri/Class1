@@ -1,6 +1,5 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -10,15 +9,16 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 import static org.openqa.selenium.By.*;
-public class DemoNewUser {
+public class CreateMultipleUser_parameterization {
 
     WebDriver driver = null;
 
     @DataProvider(name = "data-set")
     public static Object[][] DataSet() {
         Object[][] obj = {
-                {"Valid","Girish1234@gmail.com", "", "Renu@1234"},
-                {"Invalid","milkah", "Radha", "Radha@1234"},
+                {"asr7780749210@gmail.com", "", "Renu@1234"},
+                {"milkah@gmail.com", "", "Radha@1234"},
+                {"greshmasrikandapu@gmail.com", "", "Greshma@789"}
         };
         return obj;
     }
@@ -43,23 +43,18 @@ public class DemoNewUser {
     public void tearDown() throws InterruptedException {
         Thread.sleep(2000);
         driver.quit();
+        //System.out.println("created new account successfully");
     }
 
     @Test(dataProvider = "data-set")
-    public void search(String type,String email, String username, String password) {
+    public void search(String email, String username, String password) {
         // WebDriver driver = null;
         driver.findElement(xpath("//input[@id='email']")).sendKeys(email);
         driver.findElement(xpath("//input[@id='new_username']")).sendKeys(username);
         driver.findElement(xpath("//input[@id='new_password']")).sendKeys(password);
         String signUpButton = "//*[@id='create-account-enabled']";
         driver.findElement(By.xpath(signUpButton)).click();
-        if (type.equals("Valid")) {
-            System.out.println("New user created successfully");
-        }
-        else
-        {
-            System.out.println("Invalid user");
-        }
+        System.out.println("created new account successfully");
 
     }
 }
