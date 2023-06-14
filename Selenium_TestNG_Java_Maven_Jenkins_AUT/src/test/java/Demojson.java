@@ -18,7 +18,7 @@ public class Demojson {
 
     @BeforeMethod
     public void setUp() throws IOException, ParseException {
-        String ChromeDriverPath="C:\\software\\selenium\\chromedriver_win32\\chromedriver.exe";
+        String ChromeDriverPath="C:\\software\\selenium\\chromedriver\\chromedriver.exe";
         String loginDataPath="src/main/resources/UrlFile.json";
         driver= new ChromeDriver();
         System.getProperty("webdriver.chrome.driver",ChromeDriverPath);
