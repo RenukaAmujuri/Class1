@@ -58,6 +58,32 @@ Step 3: In IntelliJ IDEA, click File -> Project Structure -> Modules. Click the 
 
 Step 4: Browse and select all files, including TestNG jar and jar files extracted from the selenium-java-4.x.x.zip file and click Apply and Ok. Now you will see all libraries listed under Project’s External Libraries section.
 
+Our project is now ready to write Selenium test cases. Let’s write a simple test case to launch a web application and validate its title using TestNG.
 
+Step 5: In IntelliJ IDEA, right-click on the src folder click New -> Java Class. Create a new Java class, “SeleniumSampleTest.” 
+
+Step 6: Write a simple script to validate
+
+Execution Steps
+
+For that, carry out the following steps:
+Create a Selenium WebDriver instance.
+Perform browser optimization if necessary.
+Write a sequence of commands to execute the test steps.
+Validate the actions performed.
+
+What is Cucumber in Selenium?
+Cucumber Framework in Selenium is an open-source testing framework that supports Behavior Driven Development for automation testing of web applications. The tests are first written in a simple scenario form that describes the expected behavior of the system from the user’s perspective.
+
+It consists of
+
+1.feature file
+
+2.StepDefinitions
+
+3.TestRunner file
+
+What is Allure Reports?
+Allure Report Selenium and TestNG integration will be explained in all detail in this article. In my last article, I explained how to integrate ExtentReports reporting framework with TestNG for shiny and beautiful test automation reports. Now, I will explain to you another popular test reporting framework that the Yandex QA Team develops – Allure Reports. 
  
  
