@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/software/selenium/Allure_Testng/src">
+        <classes>
+        <class name="allurereport.AllureReport">
+            <methods>
+                <include name="logoPresence"/>
+                <include name="loginTest"/>
+                <include name="registrationTest"/>
+            </methods>
+        </class>
+        </classes>
+    </test>
+</suite>
