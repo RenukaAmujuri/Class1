@@ -1,0 +1,22 @@
+{
+  "tc01": {
+    "searchText": "a",
+    "expectedMessage": "computer found"
+  },
+  "tc02": {
+  "searchText": "1",
+  "expectedMessage": "computer found"
+},
+  "tc03": {
+    "searchText": "-",
+    "expectedMessage": "computer found"
+  },
+  "tc04": {
+    "searchText": "arra",
+    "expectedMessage": "one computer found"
+  },
+  "tc05": {
+    "searchText": "arraxxx",
+    "expectedMessage": "NO results"
+  }
+}

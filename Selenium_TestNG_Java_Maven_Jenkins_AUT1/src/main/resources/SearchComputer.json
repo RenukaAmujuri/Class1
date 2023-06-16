@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "result": {
+      "type": "object",
+      "properties": {
+        "computers": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "computer name": {
+                  "type": "string"
+                },
+                "no.of computers": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "computer name",
+                "no.of computers"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "computer name": {
+                  "type": "string"
+                },
+                "no.of computers": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "computer name",
+                "no.of computers"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "computers"
+      ]
+    }
+  },
+  "required": [
+    "result"
+  ]
+}
+
+
